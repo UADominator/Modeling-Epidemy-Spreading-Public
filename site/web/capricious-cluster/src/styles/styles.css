@@ -1,0 +1,30 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 20px auto;
+    max-Width: 1280px;
+}

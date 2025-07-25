@@ -1,0 +1,14 @@
+services:
+  domi-site:
+    image: nginx:alpine
+    container_name: domi-web
+    stop_signal: SIGINT
+    restart: always
+    working_dir: /domi-web
+    volumes:
+      - "/opt/a_dominator/web/dist:/usr/share/nginx/html:ro"
+    ports:
+      - "64999:80"
+    networks:
+      - default
+    stdin_open: true

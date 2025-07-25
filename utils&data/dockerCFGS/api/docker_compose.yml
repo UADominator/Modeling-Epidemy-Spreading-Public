@@ -1,0 +1,13 @@
+services:
+  server:
+    image: eclipse-temurin:21
+    container_name: domi-api
+    stop_signal: SIGINT
+    restart: always
+    command: ["sh", "start.sh"]
+    working_dir: /domi-api
+    volumes:
+      - "/opt/a_dominator/api:/domi-api"
+    ports:
+      - "65000:65000"
+    stdin_open: true
